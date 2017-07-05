@@ -173,24 +173,24 @@ namespace Arrays
 
 
 
-            int[] luckyNum = new int[50];
-            Random randNum = new Random();
-            int minRan = 0;
-            int maxRan = 50;
-            string userChoiceStr;
+        //    int[] luckyNum = new int[50];
+        //    Random randNum = new Random();
+        //    int minRan = 0;
+        //    int maxRan = 50;
+        //    string userChoiceStr;
 
-            for (int i = 0; i < luckyNum.Length; i++)
-            {
-                luckyNum[i] = randNum.Next(minRan, maxRan);
-            }
+        //    for (int i = 0; i < luckyNum.Length; i++)
+        //    {
+        //        luckyNum[i] = randNum.Next(minRan, maxRan);
+        //    }
 
-            Console.WriteLine("Pick a lucky number between 0 and 50 and I will tell you the index where the number is located ");
-            userChoiceStr = Console.ReadLine();
-            int userChoice = int.Parse(userChoiceStr);
-            int indx = Array.LastIndexOf(luckyNum, userChoice);
+        //    Console.WriteLine("Pick a lucky number between 0 and 50 and I will tell you the index where the number is located ");
+        //    userChoiceStr = Console.ReadLine();
+        //    int userChoice = int.Parse(userChoiceStr);
+        //    int indx = Array.LastIndexOf(luckyNum, userChoice);
 
-            Console.WriteLine("The number you chose {0} is located in index {1}.", userChoice, indx);
-        }
+        //    Console.WriteLine("The number you chose {0} is located in index {1}.", userChoice, indx);
+        //}
 
 
 
