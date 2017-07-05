@@ -88,30 +88,30 @@ namespace Arrays
 
             //Console.WriteLine("Your GPA " + GPA);
 
-            int[] arrayIntFwd = new int[100];
-            int[] arrayIntRev = new int[100];
-            Console.WriteLine("make array");
-            for (int i = 0; i < 100; i++)
-            {
-                arrayIntFwd[i] = i + 1;
+            //int[] arrayIntFwd = new int[100];
+            //int[] arrayIntRev = new int[100];
+            //Console.WriteLine("make array");
+            //for (int i = 0; i < 100; i++)
+            //{
+            //    arrayIntFwd[i] = i + 1;
 
-                
-                Console.Write(arrayIntFwd[i]);
-               
-            }
-            Console.WriteLine();
-            Console.WriteLine();
-            Array.Reverse(arrayIntFwd);
 
-            for (int i = 0; i < 100; i++)
-            {
-                
-                Console.Write(arrayIntFwd[i]);
+            //    Console.Write(arrayIntFwd[i]);
 
-            }
+            //}
+            //Console.WriteLine();
+            //Console.WriteLine();
+            //Array.Reverse(arrayIntFwd);
 
-            Console.WriteLine();
-            Console.WriteLine();
+            //for (int i = 0; i < 100; i++)
+            //{
+
+            //    Console.Write(arrayIntFwd[i]);
+
+            //}
+
+            //Console.WriteLine();
+            //Console.WriteLine();
             //int j = 1;
             //Console.WriteLine("reverse array");
             //for (int i = 0; i < 100; i++)
@@ -128,10 +128,10 @@ namespace Arrays
             //            }
 
             //        }
-                
+
             //    Console.Write(arrayIntFwd[i]);
             //  }
-            
+
 
 
 
@@ -146,7 +146,53 @@ namespace Arrays
 
             //    Console.Write(arrayIntFwd[i]);
             //}
+
+
+            //string[] namesArray = new string[5];
+            //String nameUpper;
+            
+            //string nameCompare;
+            //string nameCompUpper;
+            //Console.WriteLine("Enter five names:");
+
+            //for(int i = 0; i <= 4; i++)
+            //{
+            //    nameUpper = Console.ReadLine();
+            //    nameUpper.ToUpper();
+            //    namesArray[i] = nameUpper;
+                
+            //}
+
+            //Console.WriteLine("chosose what name you would like to print. ");
+            //nameCompare = Console.ReadLine();
+            //nameCompUpper = nameCompare.ToUpper();
+
+            //int indx = Array.IndexOf(namesArray, nameCompUpper);
+
+            //Console.WriteLine("The name {0} you are searching for is at index {1}.", nameCompare, indx);
+
+
+
+            int[] luckyNum = new int[50];
+            Random randNum = new Random();
+            int minRan = 0;
+            int maxRan = 50;
+            string userChoiceStr;
+
+            for (int i = 0; i < luckyNum.Length; i++)
+            {
+                luckyNum[i] = randNum.Next(minRan, maxRan);
+            }
+
+            Console.WriteLine("Pick a lucky number between 0 and 50 and I will tell you the index where the number is located ");
+            userChoiceStr = Console.ReadLine();
+            int userChoice = int.Parse(userChoiceStr);
+            int indx = Array.LastIndexOf(luckyNum, userChoice);
+
+            Console.WriteLine("The number you chose {0} is located in index {1}.", userChoice, indx);
         }
+
+
 
     }
 }
