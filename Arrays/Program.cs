@@ -43,53 +43,110 @@ namespace Arrays
             //}
             //Console.WriteLine("The ages you entered are {0}, {1}, {2}.", ages[0], ages[1], ages[2]);
 
-            string gradeStr = "";
+            //string gradeStr = "";
 
-            decimal[] stuGrades = new decimal[8];
+            //decimal[] stuGrades = new decimal[8];
 
-            decimal totalGrades = 0.00m;
+            //decimal totalGrades = 0.00m;
 
-            decimal GPA;
+            //decimal GPA;
 
-            Console.WriteLine("Please enter you grades for the semester, and I will give you your gpa ");
+            //Console.WriteLine("Please enter you grades for the semester, and I will give you your gpa ");
 
-            for(int i = 0; i < 8; i++)
+            //for(int i = 0; i < 8; i++)
+            //{
+            //    gradeStr = Console.ReadLine();
+            //    char grade = char.Parse(gradeStr);
+
+            //    if (grade == 'a')
+            //    {
+            //        stuGrades[i] = 4.0m;
+
+            //    } else if (grade == 'b')
+            //    {
+            //        stuGrades[i] = 3.0m;
+
+            //    }else if (grade == 'c')
+            //    {
+            //        stuGrades[i] = 2.0m;
+
+            //    }else if (grade == 'd')
+            //    {
+            //        stuGrades[i] = 1.0m;
+            //    }else
+            //    {
+            //        stuGrades[i] = 0.0m;
+            //    }
+
+            //    //stuGrades[i] = double.Parse(grade);
+            //    totalGrades = totalGrades + stuGrades[i];
+            //    Console.WriteLine(totalGrades);
+
+            //}
+
+            //GPA = totalGrades / stuGrades.Length;
+
+            //Console.WriteLine("Your GPA " + GPA);
+
+            int[] arrayIntFwd = new int[100];
+            int[] arrayIntRev = new int[100];
+            Console.WriteLine("make array");
+            for (int i = 0; i < 100; i++)
             {
-                gradeStr = Console.ReadLine();
-                char grade = char.Parse(gradeStr);
+                arrayIntFwd[i] = i + 1;
 
-                if (grade == 'a')
-                {
-                    stuGrades[i] = 4.0m;
+                
+                Console.Write(arrayIntFwd[i]);
+               
+            }
+            Console.WriteLine();
+            Console.WriteLine();
+            Array.Reverse(arrayIntFwd);
 
-                } else if (grade == 'b')
-                {
-                    stuGrades[i] = 3.0m;
-
-                }else if (grade == 'c')
-                {
-                    stuGrades[i] = 2.0m;
-
-                }else if (grade == 'd')
-                {
-                    stuGrades[i] = 1.0m;
-                }else
-                {
-                    stuGrades[i] = 0.0m;
-                }
-
-
-
-
-                //stuGrades[i] = double.Parse(grade);
-                totalGrades = totalGrades + stuGrades[i];
-                Console.WriteLine(totalGrades);
+            for (int i = 0; i < 100; i++)
+            {
+                
+                Console.Write(arrayIntFwd[i]);
 
             }
 
-            GPA = totalGrades / stuGrades.Length;
+            Console.WriteLine();
+            Console.WriteLine();
+            //int j = 1;
+            //Console.WriteLine("reverse array");
+            //for (int i = 0; i < 100; i++)
+            //{
+            //        if (arrayIntFwd[i] < arrayIntFwd[j])
+            //        {
 
-            Console.WriteLine("Your GPA " + GPA);
+            //            for (j = 0; j < 99; j++)
+            //            {
+
+            //                int temp = arrayIntFwd[i];
+            //                arrayIntFwd[i] = arrayIntFwd[j];
+            //                arrayIntFwd[j] = temp; 
+            //            }
+
+            //        }
+                
+            //    Console.Write(arrayIntFwd[i]);
+            //  }
+            
+
+
+
+
+
+
+
+
+            //Console.WriteLine();
+            //for (int i = 0; i <= 99; i++)
+            //{
+
+            //    Console.Write(arrayIntFwd[i]);
+            //}
         }
+
     }
 }
